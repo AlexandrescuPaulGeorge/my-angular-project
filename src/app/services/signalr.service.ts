@@ -32,7 +32,7 @@ export class SignalRService {
     return this.hubConnection
       .start()
       .then(() => console.log('SignalR Connected'))
-      .catch((err) => console.error('SignalR Connection Error: ', err));
+      .catch((err: any) => console.error('SignalR Connection Error: ', err));
   }
 
   on(eventName: string, callback: (...args: any[]) => void): void {
