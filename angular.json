@@ -21,7 +21,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-               "src/routes.json"
+               "src/routes.json",
+               "src/staticwebapp.config.json"
             ],
             "styles": [
               "src/styles.css"
@@ -89,7 +90,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets", 
-              "src/routes.json"
+              "src/routes.json",
+              "src/staticwebapp.config.json"
             ],
             "styles": [
               "src/styles.css"
