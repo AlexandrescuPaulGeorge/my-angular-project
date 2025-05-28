@@ -1,6 +1,7 @@
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:4200',
+  apiUrl:
+    'https://my-dotnet-api.icysea-9e4aeb5a.polandcentral.azurecontainerapps.io',
   auth: {
     domain: 'dev-7fmr6s3df361jxdu.us.auth0.com',
     clientId: 'AduSvSpJj6VIxUbdgcJhm0j0irmm5xWj',
@@ -8,5 +9,3 @@ export const environment = {
     redirectUri: 'http://localhost:4200',
   },
 };
-
-
