@@ -1,0 +1,14 @@
+<div class="chat-room-list">
+  <div class="chat-room-container">
+    <div *ngFor="let room of chatRooms" class="chat-room" (click)="openChatRoom(room)">
+      <div class="user-avatar">{{ room.name.charAt(0) }}</div>
+      <div class="chat-room-info">
+        <div class="chat-room-name">{{ room.name }}</div>
+        <div class="chat-room-last-message">
+          <span class="message-content">{{ room.content }}</span>
+          <span class="message-time">{{ getMessageTime(room.sentAt) }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

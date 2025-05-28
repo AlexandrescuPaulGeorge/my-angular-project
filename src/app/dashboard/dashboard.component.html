@@ -1,0 +1,14 @@
+<div *ngIf="!isLoginOrRegisterPage" class="layout-container">
+  <app-user-list
+    class="user-list"
+    (refreshChatRooms)="onChatRoomCreated($event)"
+  ></app-user-list>
+
+  <div class="chat-container">
+    <app-chat-room
+      [selectedChatRoomId]="selectedChatRoomId"
+      (chatRoomSelected)="onChatRoomSelected($event)"
+    ></app-chat-room>
+    <app-chat-message [chatRoomId]="selectedChatRoomId"></app-chat-message>
+  </div>
+</div>

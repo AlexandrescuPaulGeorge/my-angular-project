@@ -1,0 +1,69 @@
+.chat-room-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 5px;
+  gap: 1em;
+}
+
+.chat-room {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  padding: 10px;
+  width: 250px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.chat-room:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.user-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+}
+
+.chat-room-info {
+  flex: 1;
+}
+
+.chat-room-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.chat-room-last-message {
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.message-content {
+  max-width: 70%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.message-time {
+  font-size: 0.8rem;
+  color: #888;
+}
